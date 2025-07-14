@@ -1,4 +1,6 @@
 package js.zubigaray.ecommerce_api.service.implementations;
 
-public class CartServiceImpl {
+import js.zubigaray.ecommerce_api.service.interfaces.ICartService;
+
+public class CartServiceImpl implements ICartService {
 }
