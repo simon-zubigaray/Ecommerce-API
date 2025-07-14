@@ -4,12 +4,13 @@ import js.zubigaray.ecommerce_api.dto.UserDTO;
 import js.zubigaray.ecommerce_api.model.User;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface IUserService {
     List<User> getAllUsers();
-    User getUserById(Long id);
+    Optional<User> getUserById(Integer id);
     void createUser(UserDTO dto);
-    void editUser(UserDTO dto);
-    void deleteUser(Long id);
-    User getUserByEmail(String email);
+    void editUser(Integer id, UserDTO dto);
+    void deleteUser(Integer id);
+    Optional<User> getUserByEmail(String email);
 }
